@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Wednesday_Inheritance1\Wednesday_Inheritance1\bin\Debug\Wednesday_Inheritance1.exe.config
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Wednesday_Inheritance1\Wednesday_Inheritance1\obj\Debug\Wednesday_Inheritance1.csprojResolveAssemblyReference.cache
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Wednesday_Inheritance1\Wednesday_Inheritance1\bin\Debug\Wednesday_Inheritance1.exe
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Wednesday_Inheritance1\Wednesday_Inheritance1\bin\Debug\Wednesday_Inheritance1.pdb
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Wednesday_Inheritance1\Wednesday_Inheritance1\obj\Debug\Wednesday_Inheritance1.exe
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Wednesday_Inheritance1\Wednesday_Inheritance1\obj\Debug\Wednesday_Inheritance1.pdb
