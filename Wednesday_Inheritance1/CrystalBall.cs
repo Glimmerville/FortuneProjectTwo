@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Wednesday_Inheritance1
 {
@@ -19,6 +20,7 @@ namespace Wednesday_Inheritance1
 
         public override string Name { get; set; } = "Crystal Ball";
 
+    
         public override void Work()
         {
             base.Work();

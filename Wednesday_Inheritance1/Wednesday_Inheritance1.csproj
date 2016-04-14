@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="CrystalBall.cs" />
     <Compile Include="FortuneTeller.cs" />
+    <Compile Include="Jewelry.cs" />
+    <Compile Include="Kites.cs" />
     <Compile Include="Magic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

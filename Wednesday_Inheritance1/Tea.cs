@@ -11,6 +11,8 @@ namespace Wednesday_Inheritance1
         //here let's make a field.
         private Random random = new Random();
         //Tasseography
+        public override string Name { get; set; } = "Tea";
+
         public void TeaReading()
         {
             Console.WriteLine("Let me pour you a cup of fine, green tea.");
@@ -20,6 +22,14 @@ namespace Wednesday_Inheritance1
         //wait a sec or two (3 breaths)
         //look at the tea
         //invent meanings
+        public override void Work()
+        {
+            base.Work();
+            //now we will call a result method
+            this.Result = "Test_test_test";
+            Console.WriteLine(this.Result);
+        }
+
         public Tea()
         {
             this.Price = 25.00M;
