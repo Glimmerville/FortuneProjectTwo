@@ -27,17 +27,17 @@ namespace Wednesday_Inheritance1
         }
         protected void CreatePhrases()
         {
-            Phrases.Add("Night time is a dark place for you. Be careful of your choices.");
-            Phrases.Add("Joy shines upon you with the coming of the dawn.");
-            Phrases.Add("Stop and wait. Realign your energies. You are in conflict.");
-            Phrases.Add("Now is the time to act! You must make your move immediately!");
-            Phrases.Add("I see shiny objects in your near future.");
-            Phrases.Add("The decorating around you is terrible Feng Shui.");
-            Phrases.Add("Mars is in high sanction - don't start any business ventures.");
-            Phrases.Add("If you always face the light, you will never see shadow.");
-            Phrases.Add("The moon is full.. beware your tomorrows.");
-            Phrases.Add("Never take your safety for granted. Death watches and paces restlessly.");
-            Phrases.Add("The beautiful emerald resonates with your soul. Your aura will protect you.");
+            Phrases.Add("\"Night time is a dark place for you. Be careful of your choices.\"");
+            Phrases.Add("\"Joy shines upon you with the coming of the dawn.\"");
+            Phrases.Add("\"Stop and wait. Realign your energies. You are in conflict.\"");
+            Phrases.Add("\"Now is the time to act! You must make your move immediately!\"");
+            Phrases.Add("\"I see shiny objects in your near future.\"");
+            Phrases.Add("\"The decorating around you is terrible Feng Shui.\"");
+            Phrases.Add("\"Mars is in high sanction - don't start any business ventures.\"");
+            Phrases.Add("\"If you always face the light, you will never see shadow.\"");
+            Phrases.Add("\"The moon is full.. beware your tomorrows.");
+            Phrases.Add("\"Never take your safety for granted. Death watches and paces restlessly.\"");
+            Phrases.Add("\"The beautiful emerald resonates with your soul. Your aura will protect you.\"");
         }
         //overloaded method
         internal void CreatePhrases(string phrase)
