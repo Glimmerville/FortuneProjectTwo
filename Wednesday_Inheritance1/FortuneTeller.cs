@@ -26,12 +26,18 @@ namespace Wednesday_Inheritance1
         }
         public void StartService(Service service)
         {
-        //    Console.WriteLine("Ah yes of course! And what is your name?");
-        //    string userName = Console.ReadLine();
-        //    Console.WriteLine("I should have known! You look just like a {0}.\nBut I digress. Please, what is your favorite jewel?", userName);
-        //    string Jewel = Console.ReadLine();
-        //    Console.WriteLine("The {0} is indeed a beautiful gem. It surely resonates with your soul.", Jewel);
-        //    Console.WriteLine("For you, I suggest my {0}! \nYes it will suit your needs, {2}. \nIt only costs {1}.", service.Name, service.Price, userName);
+            Console.WriteLine("Ah yes of course! And what is your name?");
+            string userName = Console.ReadLine();
+            Console.WriteLine("I should have known! You look just like a {0}.\nBut I digress.", userName);
+        }
+        public void StartMerch(Merchandise service)
+        {
+            Console.WriteLine("Ah yes of course! And what is your name?");
+            string userName = Console.ReadLine();
+            Console.WriteLine("I should have known! You look just like a {0}.\nBut I digress.", userName);
+            //    string Jewel = Console.ReadLine();
+            //    Console.WriteLine("The {0} is indeed a beautiful gem. It surely resonates with your soul.", Jewel);
+            //    Console.WriteLine("For you, I suggest my {0}! \nYes it will suit your needs, {2}. \nIt only costs {1}.", service.Name, service.Price, userName);
         }
 
         public void Farewell()

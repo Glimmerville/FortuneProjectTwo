@@ -46,13 +46,14 @@ namespace Wednesday_Inheritance1
             TeaPhrases.Add("\"The leaves kind of look like a round globby mess.\"");
             TeaPhrases.Add("\" Very interesting. The sign of the sun means you will go on vacation!\"");
             TeaPhrases.Add("\"Is that a tree? It looks like uh, you will have Christmas?\"");
+            TeaPhrases.Add("\"I see a great shaggy dog... THE GRIM!\"");
             //add more phrases
         }
-        private string GetTPhrase()
+        protected string GetTPhrase()
         {
             //local var
-            int randomNumber = random.Next(TeaPhrases.Count);
-            return TeaPhrases.ElementAt(randomNumber);
+            int randomNumb = random.Next(TeaPhrases.Count);
+            return TeaPhrases.ElementAt(randomNumb);
         }
     }//I used the same pattern Mel did with Crystal Ball but it always breaks here
 

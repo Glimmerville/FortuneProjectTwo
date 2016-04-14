@@ -54,8 +54,6 @@ namespace Wednesday_Inheritance1
             int randomNumber = random.Next(Phrases.Count);
             return Phrases.ElementAt(randomNumber);
         }
-        //constructor
-        //let's override some of the properties of what we inehrited from magic & service
         public CrystalBall()
         {
             this.Price = 45.00M;

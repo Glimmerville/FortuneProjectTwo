@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wednesday_Inheritance1
 {
-    class Kites:Merchandise
+    class Kites : Merchandise
     {
         //here let's make a field.
         private Random random = new Random();//maybe for kite color
@@ -17,10 +17,10 @@ namespace Wednesday_Inheritance1
         public int Size { get; set; } //size of the kite
         public string Color { get; set; } //kite color
         public string kiteInterest { get; set; } //kite they are interested in buying
-        public override string Name { get; set; }//if kite has a name. Not sure I will use
+        public string Name { get; set; }//if kite has a name. Not sure I will use
         //level of expertise you need to perform it
-        protected virtual string Expertise { get; set; } //how hard is the kite to fly
-        
+        protected virtual string skillLevel { get; set; } //how hard is the kite to fly
+
 
         public void KitesList(int number)
         {
@@ -55,12 +55,12 @@ namespace Wednesday_Inheritance1
                     break;
             }
         }
-      //kite constructors - neither of these constructors work but I am not sure why
-      public void Kite()
+        //kite constructors - neither of these constructors work but I am not sure why
+        public Kites()
         {
             //default kite
         }
-      public void Kite(int kLines, int kSize, string kShape, bool kStunt, string kColor )
+        public Kites(int kLines, int kSize, string kShape, bool kStunt, string kColor)
         {
             this.Lines = kLines;
             this.Stunt = kStunt;
@@ -68,7 +68,7 @@ namespace Wednesday_Inheritance1
             this.Shape = kShape;
             this.Color = kColor;
         }
-        
+
         public virtual void Sale()
         {
             Console.WriteLine("\nHere are the types of Kites I have for sale:\n");
@@ -82,8 +82,7 @@ namespace Wednesday_Inheritance1
             Console.WriteLine("7.  Quit Buying a Kite");
             //TO DO:
             //get all the values (stunt or not stunt, how many strings, color, etc.) 
-            //and then construct a new instance of Kite using them
-            //but my constructor is not working.
+            //and then construct a new instance of Kite using the
 
             //print the object they made (via selections) to the screen
             //ask if that is what they want to buy
@@ -91,7 +90,8 @@ namespace Wednesday_Inheritance1
             //but that would take more time than I have.
 
         }
-      // Kite PurchasedKite = new Kite()   <<<< WHY DOES MY CONSTRUCTOR NOT WORK?
-        }
+        Kites PurchasedKite = new Kites(4, 36, "delta", true, "green");
+        public string boughtKite = Console.WriteLine("You have selected this kite: It is a {0}", PurchasedKite.Color );
     }
+}
 

@@ -27,27 +27,32 @@ namespace Wednesday_Inheritance1
                 crystalBall.StateEffectiveness();
             }
             else if (pickService == "T" || pickService == "t")
-            { 
+            {
                 fortuneTeller.StartService((Service)tea);
+                tea.TeaReading();
                 tea.Work();
             }
-            else 
+            else
             {
-                fortuneTeller.StartService((Service)kites);
+                fortuneTeller.StartMerch((Merchandise)kites);
                 kites.Sale();
-                Console.WriteLine("I did not really finish implementing selling kites yet.");
-                Console.ReadKey();//I put this here for the sake of making the experience nicer.
+                Kites PurchasedKite = new Kites(4, 36, "delta", true, "green");
             }
-           // fortuneTeller.StartService((Service)pickService);
+            //Console.WriteLine("I did not really finish implementing selling kites yet.");
+            //Console.ReadKey();//I put this here for the sake of making the experience nicer.
+
+            // fortuneTeller.StartService((Service)pickService);
             //Per MEL: Why did we cast this here to its grandfather type (service) think it over?
             fortuneTeller.Farewell();
-            //NOTES FROM CLASS WITH MEL:
-            //make it expandable in the future she may want more services
-            //that is why we made a thing to hold all the services (for MONEY this is a business)
-            //so CrystalBall is not a service, what it does is the service We can add more this way!
-            //this is the same idea as how you break up data in SQL / db design
-            //since crystal ball is a magic is a service, you can convert it via casting!
-            //could you add custom info to incorporate into the answers based on asking the user stuff?
-    }
+        }
+        //NOTES FROM CLASS WITH MEL:
+        //make it expandable in the future she may want more services
+        //that is why we made a thing to hold all the services (for MONEY this is a business)
+        //so CrystalBall is not a service, what it does is the service We can add more this way!
+        //this is the same idea as how you break up data in SQL / db design
+        //since crystal ball is a magic is a service, you can convert it via casting!
+        //could you add custom info to incorporate into the answers based on asking the user stuff?
     }
 }
+    
+
