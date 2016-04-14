@@ -11,10 +11,12 @@ namespace Wednesday_Inheritance1
     {
         //plain field.
         private Random random = new Random();
-        //HOW JACKIE DID THIS: made a list in properties, initialized called colorphrases
+        //HOW JACKIE implemented a color choice in hers:
+        //Here in CrystalBall - made a list in properties, initialized called colorphrases
         //then made a method to get the color phrases
         //asked for favorite color in the method and returns one of the color phrases
         //that returns in the work method next to get phrase
+
     //properties
         protected List<string> Phrases { get; set; } = new List<string>();
 

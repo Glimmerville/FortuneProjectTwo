@@ -8,7 +8,7 @@ namespace Wednesday_Inheritance1
 {
     class Service
     {
-        //WHY might we want to make this an "ABSTRACT" instead of virtual?
+        //WHY might we want to make this an "ABSTRACT" instead of virtual? (Q from MEL)
         //Abstracts are virtuals that you can't put a default into 
 
         //properties

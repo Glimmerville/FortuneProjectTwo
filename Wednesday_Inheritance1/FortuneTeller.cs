@@ -10,7 +10,7 @@ namespace Wednesday_Inheritance1
     {
         //setting up stuff that may not be used yet
         //Properties
-        public string Name { get; set; } = "Esmerelda";
+        public string Name { get; set; } = "Esmerelda"; //bonus content: should be able to make more than one teller.
         public string ExperienceLevel { get; set; }
         
 
@@ -22,7 +22,7 @@ namespace Wednesday_Inheritance1
             Console.WriteLine("Finest prices! Highest accuracy this side of Agrabah!");
             Console.WriteLine("\n");
             Console.WriteLine("Can I interest you in my services? (Y/N)");
-            string yorn = Console.ReadLine();//it always continues anyway.
+            string yorn = Console.ReadLine();//it always continues anyway. We won't accept NO for an answer!
         }
         public void StartService(Service service)
         {
@@ -48,7 +48,7 @@ namespace Wednesday_Inheritance1
         public FortuneTeller(string name, string experienceLevel)
         {
             this.Name = name;
-            this.ExperienceLevel = experienceLevel;
+            this.ExperienceLevel = experienceLevel;//set up by Mel, not really implemented
         }
 
         public FortuneTeller()//default constructor
