@@ -7,21 +7,24 @@ using System.Threading;
 
 namespace Wednesday_Inheritance1
 {
-    class CrystalBall:Magic
+    class CrystalBall:Magic,IRandomPhrases
     {
+        //make sure return type, name, params, and visibility match the interface
         //plain field.
-        private Random random = new Random();
-        //HOW JACKIE implemented a color choice in hers:
-        //Here in CrystalBall - made a list in properties, initialized called colorphrases
-        //then made a method to get the color phrases
-        //asked for favorite color in the method and returns one of the color phrases
-        //that returns in the work method next to get phrase
+        //private Random random = new Random(); //this will change due to using interface - no field in an interface
+        public Random rnd { get; set; } = new Random();
+                                              //HOW JACKIE implemented a color choice in hers:
+                                              //Here in CrystalBall - made a list in properties, initialized called colorphrases
+                                              //then made a method to get the color phrases
+                                              //asked for favorite color in the method and returns one of the color phrases
+                                              //that returns in the work method next to get phrase
 
-    //properties
-        protected List<string> Phrases { get; set; } = new List<string>();
+        //properties
+        public List<string> Phrases { get; set; } = new List<string>(); 
 
         public override string Name { get; set; } = "Crystal Ball";
 
+        public override Enum Difficulty { get; set; } = DifficultyOptions.easy;
     
         public override void Work()
         {
@@ -29,7 +32,7 @@ namespace Wednesday_Inheritance1
             //now we will call a result method
             this.Result = GetPhrase();
         }
-        protected void CreatePhrases()
+        public void CreatePhrases()
         {
             Phrases.Add("\"Night time is a dark place for you. Be careful of your choices.\"");
             Phrases.Add("\"Joy shines upon you with the coming of the dawn.\"");
@@ -44,14 +47,14 @@ namespace Wednesday_Inheritance1
             Phrases.Add("\"The beautiful emerald resonates with your soul. Your aura will protect you.\"");
         }
         //overloaded method
-        internal void CreatePhrases(string phrase)
+        public void CreatePhrases(string phrase)
         {
-            Phrases.Add(phrase);
+            Phrases.Add(phrase);//this is an overload - the default() version is in the interface!
         }
-        private string GetPhrase()
+        public string GetPhrase()
         {
             //local var
-            int randomNumber = random.Next(Phrases.Count);
+            int randomNumber = rnd.Next(Phrases.Count);
             return Phrases.ElementAt(randomNumber);
         }
         public CrystalBall()
@@ -59,7 +62,8 @@ namespace Wednesday_Inheritance1
             this.Price = 45.00M;
             this.PercentEffective = 65;
             this.BlackMagic = false;
-            this.Expertise = "beginner";
+            Program.AvailableServices.Add((Service)this);//casting this crystal ball object into Service
+             //remove expertise put in enum "Difficulty"
             //I want to call my initializer for phrases
             CreatePhrases();
         }

@@ -9,6 +9,8 @@ namespace Wednesday_Inheritance1
     class Kites : Merchandise
     {
         //here let's make a field.
+        public override decimal Price { get; set; }
+        public override string Name { get; set; }
         private Random random = new Random();//maybe for kite color
         //what kind of kites?
         public string Shape { get; set; } //delta, diamond, sled, etc.
@@ -17,7 +19,6 @@ namespace Wednesday_Inheritance1
         public int Size { get; set; } //size of the kite
         public string Color { get; set; } //kite color
         public string kiteInterest { get; set; } //kite they are interested in buying
-        public string Name { get; set; }//if kite has a name. Not sure I will use
         //level of expertise you need to perform it
         protected virtual string skillLevel { get; set; } //how hard is the kite to fly
 
@@ -55,7 +56,6 @@ namespace Wednesday_Inheritance1
                     break;
             }
         }
-        //kite constructors - neither of these constructors work but I am not sure why
         public Kites()
         {
             //default kite
@@ -90,8 +90,8 @@ namespace Wednesday_Inheritance1
             //but that would take more time than I have.
 
         }
-        Kites PurchasedKite = new Kites(4, 36, "delta", true, "green");
-        public string boughtKite = Console.WriteLine("You have selected this kite: It is a {0}", PurchasedKite.Color );
+    //    Kites PurchasedKite = new Kites(4, 36, "delta", true, "green");
+    //    public string boughtKite = Console.WriteLine("You have selected this kite: It is a {0}", PurchasedKite.Color);
     }
 }
 

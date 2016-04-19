@@ -10,20 +10,16 @@ namespace Wednesday_Inheritance1
     class Magic:Service
     {
         //what kind of magic?
+        public override decimal Price { get; set; }
+        public override string Result { get; set; }
         public virtual bool BlackMagic { get; set; }
         public virtual int PercentEffective { get; set; }
         public override string Name { get; set; }
         //level of expertise you need to perform it
-        protected virtual string Expertise { get; set; }
+        internal enum DifficultyOptions { easy, medium, hard };
         //public virtual string Jewel { get; set; }
 
-        public virtual void Work()
-        {
-            Console.WriteLine("Let me pull out my {0}." , this.Name);
-            Thread.Sleep(2000);
-            //Console.WriteLine("\n\nI gaze.\n\nI gaze...\n");
-            //Thread.Sleep(4000);
-        }
+        //moved work to Service
         //what about a show-the-results method
         public virtual void Show()
         {
